@@ -19,6 +19,10 @@ def generate_graph():
     dot.edge('A', 'B')
     dot.edge('B', 'C', label='if len(word) <= 3')
     dot.edge('B', 'D', label='if len(word) > 3')
+    dot.edge('A', 'E')
+    dot.edge('B', 'E')
+    dot.edge('F', 'E')
+    dot.edge('F', 'A')    
     dot.edge('C', 'E')
     dot.edge('D', 'E')
     dot.edge('E', 'F')
@@ -29,3 +33,4 @@ def generate_graph():
 # Generate and render the graph
 graph = generate_graph()
 graph.render('comprehension_graph', format='png', view=True)
+
