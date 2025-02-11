@@ -1,5 +1,4 @@
-#from v
-#apt install python3-graphviz
+#from v - apt install python3-graphviz
 #normal - pip install graphviz
 
 from graphviz import Digraph
